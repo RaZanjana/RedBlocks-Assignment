@@ -11,17 +11,256 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/css/bootsratp/css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
-    <nav class="navbar navbar-light bg-black">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/FREDLogo.png" alt="" width="352" height="60">
-          </a>
+<body >
+    <!-- Nav-bar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">            
+            <div class="d-flex m-auto">
+                <a class="navbar-brand m-2" href="index.html"><img class="img-fluid logo" src="./assets/images/FREDLogo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#quiz">Take the quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#donate">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#share">Share</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
       </nav>
+      <!-- Nav-bar End -->
+      <!-- Bar-line Start -->
+      <div class="nav-line text-center p-3">
+          <h5>Can you get to the top of our leaderboard? Beat our quiz and win a $100 shopping spree!</h5>
+      </div>
+      <!-- Bar-line End -->
+
+      <!-- Section 01 -->
+      <div class="section-1 d-flex align-items-center" id="home">
+        <div class="container text-white">
+            <h1 class="mb-3">How much do you really know about avoidable blindness around the world?</h1>
+            <button type="button" class="btn btn-custom btn-lg">TAKE THE QUIZ</button>
+        </div>
+    </div>
+
+    <!-- Section 02 -->
+    <div class="section-2" id="quiz" >
+        <div class="container text-white" style="width: 100%;">
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 text-center formDiv">
+                    <div class="form">
+                        <h3>Take Our</h3>
+                        <h2>IN MIND’S EYE</h2>
+                        <h3>Quiz Now!</h3>
+
+                        <form action="">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                                    <div class="mb-3">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" for="">Country</label>
+                                          </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rdoAus" value="option1">
+                                            <label class="form-check-label" for="rdoAus">Australia</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rdoInter" value="option2">
+                                            <label class="form-check-label" for="rdoInter">International</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                                    <div class="mb-3">
+                                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-6 col-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="State">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-6 col-6">
+                                    <div class="mb-3">
+                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Postcode">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-10 col-10">
+                                    <div>
+                                        <button type="button" class="btn btn-custom">Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 context">
+                                    <div class="m-3">
+                                        <small>By taking our quiz, you may receive communications about how you can help with our campaigns, on the understanding you agree to our <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 para d-flex align-items-center">
+                    <div>
+                        <h3>4 OUT OF 5 PEOPLE WHO ARE BLIND DON’T NEED TO BE. WILL YOU HELP?</h3>
+                    <br>
+                    <p>Imagine being blind simply because of your circumstance. For many of us, this is an unthinkable reality- yet, millions of people around the world are suffering from this exact fate. But it’s not all gloom and doom. The Fred Hollows Foundation has been working with communities all around the world since 1992 to restore sight and put an end to avoidable blindness. We’ve got the strategy, the know-how, the tools, and the community partners to make this happen. But this is a global challenge, and we need a diverse, world-wide coalition of change-makers to join us. That’s where you come into the picture!
+                        <br><br>
+                        Today, we’re challenging YOU and your friends to beat our quiz and get to the top of our leaderboard. We want to see how much you really know about avoidable blindness around the world.</p>
+                        <br>
+                    <h5>Take our quiz and earn points for every correct answer. Rise to the top of our leaderboard and the TOP 5 WINNERS will earn themselves a $100 shopping voucher!</h5>
+                    <br>
+                    <p>What are you waiting for?</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-xxl-6 col-xl-8 col-lg-5 col-md-6 col-sm-12 col-12">
+                            <button type="button" class="btn btn-custom">JOIN THE CHALLENGE</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 03 -->
+    <div class="section-3 d-flex align-items-center" id="donate">
+        <div class="ftImg">
+            <div class="tag"></div>
+            <img src="./assets/images/bg-3.png" alt="">
+        </div>
+        <div class="container text-white sec3">
+            <div class="row text-center">
+                <h2 class="mb-3">YOUR DONATION IS GOING TO CHANGE<br>SOMEONE’S LIFE LIKE NEVER BEFORE.</h2>
+            </div>
+            <div class="donateDiv">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                        <img src="./assets/images/donate.png" alt="">
+                    </div>
+                    <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                        <h3>Become a regular giver:</h3>
+                        <p>Making a regular donation helps increase the impact we can make in communities around the world. In some communities we work in, just $25 can restore sight for someone who might have lost their ability to see. Imagine the impact you can make with a monthly gift.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                        <img src="./assets/images/gift.png" alt="">
+                    </div>
+                    <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                        <h3>Become a regular giver:</h3>
+                        <p>Every small donation helps change lives. Just $25 can restore sight for someone who might have lost their vision for entirely preventable causes. Every eye is an eye, and no one should be deprived of their sight just because they cannot afford or access proper healthcare.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-6 col-9">
+                        <button type="button" class="btn btn-custom btn-lg h3">DONATE</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Section 04 -->
+    <div class="section-4 d-flex justify-content-center" id="share">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="mb-3"><span>CHALLENGE YOUR FRIENDS & FAMILY</span><br>TO OUR QUIZ AND BATTLE IT OUT<br>TO GET ON THE LEADERBOARD!</h2>
+            </div>
+            <div class="ftImg">
+                <div class="tag"></div>
+                <div class="round d-flex align-items-center">
+                    <div class="round-content">
+                        <h3>SHARE OUR QUIZ</h3>
+                        <p>Think you’ve got what it takes to beat your friends on our quiz? Issue them a challenge!</p>
+                        <p>The <span class="h4">TOP 5 WINNERS</span> get to walk away with a <span class="h4">$100 shopping spree each!</span></p>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-custom-dark"><h4>SHARE</h4></button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 05 -->
+    <div class="section-5 d-flex align-items-center" id="about">
+        <div class="ftImg">
+            <div class="tag"></div>
+            <img src="./assets/images/bg-5.png" alt="">
+        </div>
+        <div class="container text-white sec5">
+            
+            <div class="donateDiv">
+                <div class="row">
+                    <h1 class="mb-3">ABOUT FRED HOLLOWS<br>FOUNDATION AUSTRALIA</h1>
+                </div>
+                <div class="row">
+                    <p>
+                        The Fred Hollows Foundation was founded in 1992 by eye surgeon Fred Hollows. The Foundation focuses on treating and preventing blindness and other vision problems. The Foundation now works in more than 25 countries and has restored sight to over two and a half million people worldwide. This couldn’t have been achieved without the overwhelming support of the Australian public. We’re as determined now as ever to end avoidable blindness. 4 out of 5 people who are blind don’t need to be – there remains so much to do. Fred’s work continues very much in the way it started: by just getting on with it. The Foundation trains doctors, nurses and healthcare workers, distributes antibiotics, raises money for much needed equipment and medical facilities and performs eye operations exactly like the ones Fred did more than 30 years ago. When someone’s sight is restored, it gives people the chance for a better life. They’re able to work, go to school and provide for their families. Fred believed that everyone, no matter whether they were rich or poor, had the right to affordable eye care. Our work won’t stop until the injustice of avoidable blindness is completely eradicated in Australia and in the rest of the world. We believe, without a doubt, this will one day be accomplished.
+                    </p>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-white text-lg-start bg-black">
+        <div class="social-media-icon text-center">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            Copyright 2021 Fred Hollows AU | All Rights Reserved<br>
+            Terms & Conditions | Privacy Policy
+        </div>
+        <!-- Copyright -->
+      </footer>
     <script src="./assets/js/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
